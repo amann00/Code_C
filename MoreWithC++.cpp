@@ -49,7 +49,7 @@ humanpntr >> 0x61ff03 */
 
 //PROGRAM_3 > Passing an array to function
 void pasarr(int [],int);  //func prototype
-int main()
+/*int main()
 {
     int marks[] = { 34,97,56,45,89 };
     int length = 5;
@@ -62,7 +62,7 @@ void pasarr(int marks[],int length)
     {
         cout<<marks[i]<<endl;
     }
-}
+}*/
 //PROGRAM_4 > Relation b/w Array & Pointer
 void pntr()
 {
@@ -76,7 +76,7 @@ void pntr()
 
 //PROGRAM_5 > "Const" keyword with function and array
 void Const(const int num[],int limit);
-int main()
+/*int main()
 {
     int num[] = { 78,96,57,48,30 };
     int limit =5;
@@ -90,9 +90,9 @@ for(int i=0;i<limit;i++)
 {
     cout<<num[i]<<endl;
 }
-}
+}*/
 //PROGRAM_6 > Array ranges with Pointers
-void display(const int *start,const int *end);
+/*void display(const int *start,const int *end);
 int main()
 {
     int numbers[] = { 34,65,35,95,42,64,75,14,54 };
@@ -105,7 +105,7 @@ void display(const int *start,const int *end){
     {
         cout<<*pntr<<endl;
     }
-}/*OUTPUT >
+}*//*OUTPUT >
 42
 64
 75
@@ -114,7 +114,7 @@ void display(const int *start,const int *end){
 */
 
 //PROGRAM_7 > Introduction to Structures
-struct Students{
+/*struct Students{
     int RollNo; // -Structure members
     char Gender; // -Structure members
 }Ajay,Rahul,Mohini; // -Structure variables
@@ -132,9 +132,9 @@ int main()
     Mohini.Gender = 'F';
 
     cout<<Mohini.RollNo<<endl<<Mohini.Gender<<endl;
-}
+}*/
 //PROGRAM_8 > Arrow Operator with Pointers to access Structure members
-struct student{
+/*struct student{
     int RollNo;
     char Gender;
 }Dev;
@@ -155,7 +155,7 @@ M
 */
 
 //PROGRAM_9 > Passing Structure to Func by Value, Pointer(Address).
-struct student{
+/*struct student{
     int RollNo;
     int Age; // > Members
     char Gender;
@@ -242,9 +242,9 @@ void Details(EmployeeDetails *Pritha){
     cout<<"Salary: "<<Pritha->Salary<<endl;
     cout<<"House No: "<<Pritha->HouseNo<<endl;
     cout<<"Locality: "<<Pritha->Locality<<endl;
-}
+}*/
 //PROGRAM_12 > Nested structure having Arrow Operator...2
-struct address{
+/*struct address{
     int HouseNo;
     string StreetAd;
 };
@@ -370,16 +370,21 @@ int main()
     John.Id=42200;
     cout<<John.Id<<endl;
     cout<<John.Salary<<endl;
-}
+}*/
 
-//PROGRAM_16 > New and Delete Operators|Dynamic Memory Allocation
+//PROGRAM_16 > New and Delete Keyword|Dynamic Memory Allocation
 void Dyn(){
     int *pointer;
-    pointer = new int;
+    pointer = new int; //allocating new dynamic memory location
     *pointer = 435;
     cout<<*pointer;
-    delete pointer;
+    delete pointer;  //Deallocating created memory location
 }
+
+//PROGRAM_17 > Dynamically allocating Arrays depending on user input
+
+
+
 int main(){
     //pntr();
     Dyn();
